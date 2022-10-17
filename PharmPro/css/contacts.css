@@ -1,0 +1,28 @@
+/* CONTACTS */
+.parthners_brands{
+    display:flex;
+    justify-content: space-between;
+    margin:0 auto;
+    max-width: 1150px;
+    width: 100%;
+    max-height: 75px;
+
+}
+.section.address{
+    max-width: 100%;
+    background: #EFEFEF;
+
+}
+.address_block{
+    display:flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    width: 100%;
+    margin:0 auto;
+
+
+}
+.address_block_left_text, .address_block_left_text b{
+    padding-top: 40px ;
+    font-size: 24px;
+}
