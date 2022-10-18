@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <title>PharmPRO</title>
@@ -7,35 +8,46 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/general.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Подключаем CSS слайдера -->
+    <link rel="stylesheet" href="css/simple-adaptive-slider.css">
+    <!-- Подключаем JS слайдера -->
+    <script defer src="js/simple-adaptive slider.js"></script>
 </head>
+
 <body>
     <div class="wrapper">
         <header>
 
 
-                <div class="header_upper">
+            <div class="header_upper">
 
-                    <div class="header_upper_block-logo">
-                        <a href="index.html" class="header_upper__logo"><img src="img/header_logo.png" alt="PharmPRO" class="header_upper__logo-img"></a>
-                    </div>
-
-                    <nav class="header_upper_nav">
-                        <a href="products.html" class="header_upper_nav-link">products</a>
-                        <a href="contacts.html" class="header_upper_nav-link">contacts</a>
-                    </nav>
+                <div class="header_upper_block-logo">
+                    <a href="index.html" class="header_upper__logo"><img src="img/header_logo.png" alt="PharmPRO"
+                            class="header_upper__logo-img"></a>
                 </div>
 
-                <div class="header_center">
-                    <h1 class="header_center__title">High technology <br> pharmacy <br> fabrication</h1>
-                </div>
+                <nav class="header_upper_nav">
+                    <a href="products.html" class="header_upper_nav-link">products</a>
+                    <a href="contacts.html" class="header_upper_nav-link">contacts</a>
+                </nav>
+            </div>
+
+            <div class="header_center">
+                <h1 class="header_center__title">High technology <br> pharmacy <br> fabrication</h1>
+            </div>
+            <nav class="header_upper_nav adapt">
+                <a href="products.html" class="header_upper_nav-link">products</a>
+                <a href="contacts.html" class="header_upper_nav-link">contacts</a>
+            </nav>
 
         </header>
 
-        <section class="section about" style="padding-top:80px;">
+        <section class="section about" style="">
             <h3 class="section_title">about us</h3>
 
             <p class="about__text">
-                Our company has been monitoring the quality of manufactured pharmaceutical products for many years. We provide full support to our partners and clients
+                Our company has been monitoring the quality of manufactured pharmaceutical products for many years. We
+                provide full support to our partners and clients
             </p>
         </section>
 
@@ -46,7 +58,8 @@
                 <div class="advantages_slide back">
                     <h2 class="advantages_slide_block_title back">
                         <div class="advantages_slide_title">
-                            We produce <br> any  <span class="mark">reagents</span> <br> and <br> <span class="mark">preparations</span>
+                            We produce <br> any <span class="mark">reagents</span> <br> and <br> <span
+                                class="mark">preparations</span>
                         </div>
                     </h2>
 
@@ -56,7 +69,8 @@
 
                     <h2 class="advantages_slide_block_title">
                         <div class="advantages_slide_title">
-                        The <span class="mark">best</span> and <span class="mark">safest</span> <br> conditions for our <br> employees
+                            The <span class="mark">best</span> and <span class="mark">safest</span> <br> conditions for
+                            our <br> employees
                         </div>
                     </h2>
 
@@ -82,22 +96,53 @@
                 </div>
                 <div class="news_block">
                     <h4 class="news_block_title">
-                        A <span class="mark"> new batch </span> of  <br> manufactured <br> products
+                        A <span class="mark"> new batch </span> of <br> manufactured <br> products
                     </h4>
                     <img src="img/news2.png" alt="" class="news_block_img">
                 </div>
                 <div class="news_block">
                     <h4 class="news_block_title">
-                        Increased <span class="mark"> speed </span> <br> and <span class="mark">scale</span> of <br> production
+                        Increased <span class="mark"> speed </span> <br> and <span class="mark">scale</span> of <br>
+                        production
                     </h4>
                     <img src="img/news3.png" alt="" class="news_block_img">
                 </div>
             </div>
+
+            <div class="itcss news_container">
+                <div class="itcss__wrapper news_container">
+                    <div class="news_content itcss__items">
+                        <div class="news_block itcss__item">
+                            <h4 class="news_block_title">
+                                New <span class="mark"> high-tech </span> <br> equipment
+                            </h4>
+                            <img src="img/news1.png" alt="" class="news_block_img">
+                        </div>
+                        <div class="news_block itcss__item">
+                            <h4 class="news_block_title">
+                                A <span class="mark"> new batch </span> of <br> manufactured <br> products
+                            </h4>
+                            <img src="img/news2.png" alt="" class="news_block_img">
+                        </div>
+                        <div class="news_block itcss__item">
+                            <h4 class="news_block_title">
+                                Increased <span class="mark"> speed </span> <br> and <span class="mark">scale</span> of
+                                <br> production
+                            </h4>
+                            <img src="img/news3.png" alt="" class="news_block_img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </section>
+
+
 
         <footer class="footer">
             <div class="footer_block">
-               <div class="footer_contacts">
+                <div class="footer_contacts">
                     <ul class="footer_contacts_list">
                         <li>Email: Strashnaya@gmail.com</li>
                         <li>All rights reserved</li>
@@ -122,5 +167,26 @@
 
     </div>
     <script src="js/slider.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', () => {
+            // инициализация слайдера
+            new ItcSimpleSlider('.itcss', {
+                loop: true,
+                autoplay: true,
+                interval: 5000,
+                swipe: true,
+            });
+            document.querySelector('.btn-prev').onclick = () => {
+                // перейдём к предыдущему слайду
+                slider.prev();
+            }
+            // назначим обработчик при нажатии на кнопку .btn-next
+            document.querySelector('.btn-next').onclick = () => {
+                // перейдём к следующему слайду
+                slider.next();
+            }
+        });
+    </script>
 </body>
+
 </html>
